@@ -12,10 +12,10 @@ def test_year_choice(request):
 
 
 @pytest.fixture
-def test_year(year_choice=1):
-    if year_choice == 1:
+def test_year(test_year_choice):
+    if test_year_choice == 1:
         return years_that_are_leap_years[2]
-    elif year_choice == 2:
+    elif test_year_choice == 2:
         return years_that_are_not_leap_years[3]
 
 
